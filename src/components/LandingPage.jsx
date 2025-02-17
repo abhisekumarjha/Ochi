@@ -14,7 +14,7 @@ const LandingPage = () => {
                                 {index === 1 && (<motion.div
                                     initial={{ width: 0 }}
                                     animate={{ width: "9vw" }}
-                                    transition={{ ease: "backOut", duration: 1 }} className='w-[9vw] h-[5.7vw] rounded-md mr-[0.5vw] overflow-hidden'>
+                                    transition={{ ease: "backOut", duration: 1, delay: 0.5 }} className='w-[9vw] h-[5.7vw] rounded-md mr-[0.5vw] overflow-hidden'>
                                     <img src={LandingPageImage} alt="landingPage" className='w-full h-full' />
                                 </motion.div>)}
                                 <h1 className='uppercase text-9xl leading-[6.5vw] font-semibold'>{item}</h1>
