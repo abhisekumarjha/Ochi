@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import EyeImage from '../../public/eyes.jpeg'
 
 const Eyes = () => {
 
@@ -20,7 +21,9 @@ const Eyes = () => {
 
     return (
         <div className='eyes w-full h-screen overflow-hidden'>
-            <div data-scroll data-scroll-section data-scroll-speed="-0.9" className='relative w-full h-full bg-cover bg-center bg-[url("./public/eyes.jpeg")] cursor-pointer'>
+            <div data-scroll data-scroll-section data-scroll-speed="-0.9" className='relative w-full h-full cursor-pointer'
+                style={{ backgroundImage: `url(${EyeImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+            >
                 <div className='absolute flex gap-10 top-1/2 left-1/2 -translate-[50%]'>
                     <div className='w-[15vw] h-[15vw] flex items-center justify-center rounded-full bg-zinc-100 cursor-pointer'>
                         <div className='relative w-2/3 h-2/3 rounded-full bg-zinc-900'>
